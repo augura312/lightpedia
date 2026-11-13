@@ -1,4 +1,4 @@
-<html><head><title>lightpedia</title></head><body>
+<html><head><link rel="icon" type="image/png" href="favicon.png"><title>Lightpedia</title></head><body>
     <button class="example" onclick="example()">example button</button>
     <p class="text">lightpedia is a free online encyclopedia that anyone can edit. It is a collaborative platform where users can contribute and share knowledge on a wide range of topics. The goal of lightpedia is to provide accurate and reliable information to the public, while also fostering a community of learners and educators.</p>
     <p class="text">lightpedia is a open-source project that is a small and lightweight alternative to other online encyclopedias. It is designed to be easy to use and accessible to everyone, regardless of their technical expertise. Users can create and edit articles, add references and citations, and participate in discussions about the content.</p>
@@ -15,6 +15,24 @@
     <p class="fixedsys">you would want to use this on a slow computer cuz theres no heavy graphics or animations unlike wikipedia & others</p>
     <p class="fixedsys">theres just text and buttons in lightpedia btw lightpedia is linked to smg4</p>
     <p class="fixedsys">about linux:</p>
+    <p class="text">tux image (loads in 5s):</p>
+    <img data-src="image-tux.jpg" alt="Description" class="lazy-image">
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                     const image = entry.target;
+                    setTimeout(() => {
+                      image.src = image.dataset.src;
+                    }, 5000); // delay by five seconds
+                    observer.unobserve(image);
+                   }
+                }
+            });
+
+    document.querySelectorAll(".lazy-image").forEach(image => observer.observe(image));
+</script>
     <p class="fixedsys">linux is a free and open-source operating system that is known for its stability, security, and flexibility.</p>
     <p class="fixedsys">linux distros are like linux versions but with different packages and configurations.</p>
     <p class="fixedsys">all linux distros are based on the linux kernel, but they have different desktop environments and package managers.</p>
@@ -22,9 +40,27 @@
     <p class="text">btw lightpedia is just a random thought and its just a side project</p>
     <button class="example" onclick="linux()">more linux info</button>
     <p class="importaint">linux cant run .exe and other windows exclusive apps</p>
-    <p class="text">i recommed waching electroBOOM</p>
+    <p class="text">i recommed waching electroBOOM</p>  
+    <img data-src="image-electroboom.jpg" alt="Description" class="lazy-image">
+
+    <script>
+        const observer1 = new IntersectionObserver(entries => {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                     const image = entry.target;
+                    setTimeout(() => {
+                      image.src = image.dataset.src;
+                    }, 6000); // delay by five seconds
+                    observer1.unobserve(image);
+                   }
+                }
+            });
+
+    document.querySelectorAll(".lazy-image").forEach(image => observer1.observe(image));
+</script>+
     <p class="text">he is a youtuber that makes videos about electronics and he is very funny and does dangerous things like trying to make a big arc reactor with a big transformer from a microwave</p>
-    <p class="text">im planning to make a image renderer for lightpedia and add videos without making lightpedia laggy so the images render slowley</p>
+    <p class="text">image renderer is finished</p>
+    <p class="text">this is ~1 200 000 bytes including all of the images</p>
     <style>
         button {
             background-color: rgb(25, 0, 250);
@@ -63,7 +99,7 @@
     </style>
     <script>
         function example() {
-            alert("example the lightpedia version is v1");
+            alert("example the lightpedia version is v2");
             console.log("example shown");
         }
         function linux() {
