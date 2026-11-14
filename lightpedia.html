@@ -1,5 +1,6 @@
-<html><head><link rel="icon" type="image/png" href="favicon.png"><title>Lightpedia</title></head><body>
+<html><head><link rel="stylesheet" href="style.css"><link rel="icon" type="image/png" href="favicon.png"><title>Lightpedia</title></head><body><script src="scripts.js"></script>
     <button class="example" onclick="example()">example button</button>
+    <p class="fixedsys"><a onclick="openwordexplain()" href="wordexplane.html" target="_blank">word explaner</a></p> <p class="fixedsys"><a onclick="opencredits()" href="credits.html" target="_blank">credits</a></p>
     <p class="text">lightpedia is a free online encyclopedia that anyone can edit. It is a collaborative platform where users can contribute and share knowledge on a wide range of topics. The goal of lightpedia is to provide accurate and reliable information to the public, while also fostering a community of learners and educators.</p>
     <p class="text">lightpedia is a open-source project that is a small and lightweight alternative to other online encyclopedias. It is designed to be easy to use and accessible to everyone, regardless of their technical expertise. Users can create and edit articles, add references and citations, and participate in discussions about the content.</p>
     <p class="text">this is an example of a lightpedia article</p>
@@ -9,15 +10,14 @@
     <p class="text">1. go to the lightpedia github page and download the template</p>
     <p class="text">2. open the .html file in vscode or any other text editor</p>
     <p class="text">3. edit the text and add your own content</p>
-    <p class="text">4. when your done save the file and if you want you can upload it to a github repository but credit me</p>
+    <p class="text">4. when your done save the file and if you want you can upload it to a github repository but credit me ;p</p>
     <p class="text">more about the lightpedia project:</p>
     <p class="fixedsys">lightpedia is an wikipedia clone that is very small with basically no things that will lag on a asus k56cm</p>
     <p class="fixedsys">you would want to use this on a slow computer cuz theres no heavy graphics or animations unlike wikipedia & others</p>
-    <p class="fixedsys">theres just text and buttons in lightpedia btw lightpedia is linked to smg4</p>
+    <p class="fixedsys">theres just text, buttons, link and images in lightpedia btw lightpedia is linked to smg4</p>
     <p class="fixedsys">about linux:</p>
     <p class="text">tux image (loads in 5s):</p>
     <img data-src="image-tux.jpg" alt="Description" class="lazy-image">
-
     <script>
         const observer = new IntersectionObserver(entries => {
             for (const entry of entries) {
@@ -30,7 +30,6 @@
                    }
                 }
             });
-
     document.querySelectorAll(".lazy-image").forEach(image => observer.observe(image));
 </script>
     <p class="fixedsys">linux is a free and open-source operating system that is known for its stability, security, and flexibility.</p>
@@ -42,7 +41,6 @@
     <p class="importaint">linux cant run .exe and other windows exclusive apps</p>
     <p class="text">i recommed waching electroBOOM</p>  
     <img data-src="image-electroboom.jpg" alt="Description" class="lazy-image">
-
     <script>
         const observer1 = new IntersectionObserver(entries => {
             for (const entry of entries) {
@@ -55,57 +53,16 @@
                    }
                 }
             });
-
     document.querySelectorAll(".lazy-image").forEach(image => observer1.observe(image));
 </script>+
     <p class="text">he is a youtuber that makes videos about electronics and he is very funny and does dangerous things like trying to make a big arc reactor with a big transformer from a microwave</p>
     <p class="text">image renderer is finished</p>
     <p class="text">this is ~1 200 000 bytes including all of the images</p>
-    <style>
-        button {
-            background-color: rgb(25, 0, 250);
-            color: rgb(2, 2, 2);
-            padding: 10px 20px;
-            border: 2px solid black;
-            cursor: pointer;
-            font-family: Fixedsys, Fixedsys Excelsior;
-            font-size: 20px;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: darkblue;
-            font-size: 24px;
-            border-radius: 5px;
-        }
-        .text {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .importaint {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 22px;
-            font-weight: bold;
-            color: red;
-        }
-        body {
-            background-color:rgba(40, 37, 194, 0.616);
-        }
-        .fixedsys {
-            font-family: fixedsys, Fixedsys Excelsior;
-            font-size: 20px;
-        }
-       
-    </style>
+    <h1 id="clock"></h1>
     <script>
-        function example() {
-            alert("example the lightpedia version is v2");
-            console.log("example shown");
-        }
-        function linux() {
-            alert("linux is a free and open-source os with alot of distros and desktop enviroments. best linux distros that are good for beginners: linux mint, ubuntu, lubuntu. best linux desktom enviroments: KDEplasma, cinamon, xfce...");
-            console.log("linux info shown");
-        }
+        updateClock();
+        setInterval(updateClock, 1000);
     </script>
     <p class="importaint">a lightpedia page DO NOT REMOVE THIS LINE pls</p>
+    
 </body></html>
