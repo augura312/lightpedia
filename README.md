@@ -9,5 +9,6 @@ it wont get alot of updates
 # news
 on 2026-11-14 the biggest lightpedia update ever got published    
 on 2026-11-16 update 3.1 is exiting the beta version    
+on 2026-11-16 the update should come out at ~ 2027    
 # upcoming fetures
 search engine with acc
